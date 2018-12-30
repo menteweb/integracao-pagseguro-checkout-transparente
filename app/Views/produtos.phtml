@@ -1,0 +1,21 @@
+<div class="produtos container">
+    <h4 class="produtos_titulo">Cursos disponiveis</h4>
+
+    <div class="row produtos_container">
+        <? foreach($this->view->produtos as $produto){ ?>
+            <div class="col s4">
+                <section class="produtos_item">
+                    <figure class="produtos_item_imagem">
+                        <img src="<?= $produto->imagem ?>" alt="<?= $produto->produto ?>" title="<?= $produto->produto ?>">
+                    </figure>
+                    
+                    <h1 class="produtos_item_titulo"><?= $produto->produto ?></h1>
+                    <p class="produtos_item_valor"><i class="material-icons small">attach_money</i> <?= $produto->valor ?></p>
+                    <div class="produtos_item_acoes">
+                        <a href="./checkout/<?= $produto->slug ?>" class="waves-effect waves-light btn-large">Comprar agora</a>
+                    </div>
+                </section>
+            </div>
+        <? } ?>
+    </div>
+</div>

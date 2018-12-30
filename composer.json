@@ -1,0 +1,16 @@
+{
+    "name": "menteweb/integracao-pagseguro-checkout-transparente",
+    "description": "Integracao com o pagseguro checkout transparente",
+    "scripts": {
+        "start": "php -S localhost:8000 -t www"
+    },
+    "config": {
+        "process-timeout": 0
+    },
+    "autoload": {
+        "psr-4": {
+            "System\\": "./system",
+            "App\\": "./app"
+        }
+    }
+}

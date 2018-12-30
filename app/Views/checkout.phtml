@@ -1,0 +1,61 @@
+<div class="checkout">
+    <div class="checkout_preco">
+        <p class="checkout_preco_titulo">Pagamento Unico</p>
+        <p class="checkout_preco_valor">R$ <?= $this->view->produto->valor ?></p>
+    </div>
+
+    <div class="row checkout_container">
+        <section class="col s4 checkout_produto">
+            <figure>
+                <img src="<?= $this->view->produto->imagem ?>" alt="">
+            </figure>
+
+            <h1 class="checkout_produto_titulo"><?= $this->view->produto->produto ?></h1>
+        </section>
+
+        <div class="col s8">
+            <div class="row checkout_user">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="nome_completo" type="text" class="validate">
+                    <label for="nome_completo">Nome completo</label>
+                </div>
+                <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                    <input id="email" type="text" class="validate">
+                    <label for="email">E-mail</label>
+                </div>
+            </div>
+
+            <hr>
+            
+            <div class="row checkout_cartao">
+                <div class="input-field col s8">
+                    <i class="material-icons prefix">credit_card</i>
+                    <input id="cartao" type="text" class="validate">
+                    <label for="cartao">Numero do cartão</label>
+                </div>
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">verified_user</i>
+                    <input id="cvc" type="text" class="validate">
+                    <label for="cvc">CVC</label>
+                </div>
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">date_range</i>
+                    <input id="vm" type="text" class="validate">
+                    <label for="vm">Validade Mês</label>
+                </div>
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">date_range</i>
+                    <input id="va" type="text" class="validate">
+                    <label for="va">Validade Ano</label>
+                </div>
+            </div>
+
+            <div class="checkout_acoes right-align">
+                <button class="jm_finalizar waves-effect waves-light btn-large green disabled"><i class="material-icons left">check</i>Finalizar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
